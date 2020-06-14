@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="zh-cn">
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="lib/css/bootstrap.css">
+  <title>08-内容-图片</title>
+  <style type="text/css">
+
+  </style>
+</head>
+<body style="padding: 100px;">
+<!--<img src="img/78.jpg" alt="" class="img-thumbnail float-left">-->
+<!--<img src="img/1.jpg" alt="" class="img-fluid float-right">-->
+
+<br>
+
+<picture>
+  <source srcset="img/78.jpg" media="(min-width: 1000px)">
+  <source srcset="img/2.jpg" media="(min-width: 800px)">
+  <source srcset="img/3.jpg" media="(min-width: 600px)">
+  <source srcset="img/4.jpg" media="(min-width: 500px)">
+  <img src="img/1.jpg" alt="">
+</picture>
+
+<!-- bootstrap依赖于JQ -->
+<script src="lib/js/jquery.js"></script>
+<!-- 弹窗、提示、下拉菜单 -->
+<script src="lib/js/popper.js"></script>
+<script src="lib/js/bootstrap.js"></script>
+</body>
+</html>

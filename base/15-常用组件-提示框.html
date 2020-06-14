@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="zh-cn">
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="lib/css/bootstrap.css">
+  <title>15-常用组件-提示框</title>
+</head>
+<body style="padding: 60px">
+
+<button type="button" class="btn btn-secondary" data-toggle="tooltip" data-placement="top" title="Tooltip on top">
+  Tooltip on top
+</button>
+<button type="button" class="btn btn-secondary" data-toggle="tooltip" data-placement="right" title="Tooltip on right">
+  Tooltip on right
+</button>
+<button type="button" class="btn btn-secondary" data-toggle="tooltip" data-placement="bottom" title="Tooltip on bottom">
+  Tooltip on bottom
+</button>
+<button type="button" class="btn btn-secondary" data-toggle="tooltip" data-placement="left" title="Tooltip on left">
+  Tooltip on left
+</button>
+
+<!-- bootstrap依赖于JQ -->
+<script src="lib/js/jquery.js"></script>
+<!-- 弹窗、提示、下拉菜单 -->
+<script src="lib/js/popper.js"></script>
+<script src="lib/js/bootstrap.js"></script>
+<script>
+
+  $('[data-toggle="tooltip"]').tooltip()
+</script>
+</body>
+</html>

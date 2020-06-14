@@ -1,0 +1,95 @@
+<!-- 1.HTML5标准的doctype头部定义的首要的,否则会导致样式失真 -->
+<!-- 
+	<!doctype html>
+	<html lang="zh-cn">
+	...
+	</html>
+	 -->
+<!doctype html>
+<html lang="zh-cn">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <!-- 2.为了确保所有设备和触摸效果,必须在网页的<head>区添加响应式的视图标签 -->
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="lib/css/bootstrap.css">
+
+  <title>栅格布局</title>
+  <!-- 3.为了更直观的用BootStrap的尺寸规范(而不受各浏览器标准的影响),
+   将全局box-sizing的值由默认的content-box重定义为 border-box
+   以保证 padding 不会影响元素的最后计算宽度-->
+
+  <!-- 恢复原尺寸
+   .selector-for-some-widget{
+     box-sizing: content-box
+   }
+   -->
+  <style type="text/css">
+    .container {
+      height: 100px;
+      background-color: antiquewhite;
+    }
+
+    .container > div > div:nth-child(1) {
+      background-color: red;
+    }
+
+    .container > div > div:nth-child(2) {
+      background-color: green;
+    }
+
+    .container > div > div:nth-child(3) {
+      background-color: blue;
+    }
+
+  </style>
+</head>
+<body>
+<!-- 小屏幕 -->
+<!-- 容器: container 或 container-fluid -->
+<!--<div class="container">-->
+<!--  <div class="row">-->
+<!--    <div class="col-8">第一部分</div>-->
+<!--    <div class="col-4">第二部分</div>-->
+<!--    <div class="col-4">第三部分</div>-->
+<!--  </div>-->
+<!--</div>-->
+
+<!-- 超小屏幕 -->
+<!--<div class="container">-->
+<!--  <div class="row">-->
+<!--    <div class="col-sm-5">第一部分</div>-->
+<!--    <div class="col-sm-5">第二部分</div>-->
+<!--    <div class="col-sm">第三部分</div>-->
+<!--  </div>-->
+<!--</div>-->
+
+<!-- 中屏幕 -->
+<!--<div class="container">-->
+<!--  <div class="row">-->
+<!--    <div class="col-md-3">第一部分</div>-->
+<!--    <div class="col-md-6">第二部分</div>-->
+<!--    <div class="col-md-3">第三部分</div>-->
+<!--  </div>-->
+<!--</div>-->
+
+<!-- 小屏幕,中屏幕,大屏幕 -->
+<div class="container">
+  <div class="row">
+    <div class="col-sm-1 col-md-3 col-lg-5">第一部分</div>
+    <div class="col-sm-10 col-md-6 col-lg-2">第二部分</div>
+    <div class="col-sm-1 col-md-3 col-lg-5">第三部分</div>
+  </div>
+</div>
+
+
+<!-- bootstrap依赖于JQ -->
+<script src="lib/js/jquery.js"></script>
+<!-- 弹窗、提示、下拉菜单 -->
+<script src="lib/js/popper.js"></script>
+<script src="lib/js/bootstrap.js"></script>
+</body>
+</html>
